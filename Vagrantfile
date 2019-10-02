@@ -87,7 +87,7 @@ Vagrant.configure("2") do |config|
     deploy_config.vm.box = "generic/ubuntu1804"
     deploy_config.vm.hostname = "ubuntu-01"
     deploy_config.vm.box_check_update = false
-    
+    config.vm.synced_folder ".", "/vagrant"
 
     deploy_config.vm.network "forwarded_port", guest: 3000, host: 3111
 
