@@ -22,6 +22,7 @@ curl -sL https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh -o
 bash install_nvm.sh
 export PATH="$HOME/.nvm:$PATH"
 source ~/.nvm/nvm.sh
+#if this gives problem try node 10.15.3
 nvm install 10.10.0
 nvm use 10.10.0
 SCRIPT
@@ -58,7 +59,7 @@ fi
   rbenv rehash
   gem install rails -v #{RAILS_V}
   gem install mailcatcher
-
+  gem install foreman
   rbenv rehash
 #fi
 SCRIPT
